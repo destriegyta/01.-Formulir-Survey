@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="from survey layout with HTML and CSS">
+    <meta name="keywords" content="HTML, CSS, Layouts, Flexbox, Positioning">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="author" content="Dadang Destari Putra">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,
+    200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,
+    400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Healty From Survey</title>
+</head>
+<body>
+         <header>
+            <div class="container">
+            <div class="letterhead">
+                <img src="asset/logo.png" alt="head" class="image-class">
+                <address>
+                    www.techgadsolutions.com |<br>
+                    info@techgadsolutions.com | (234) 567-8901 |<br>
+                    108 N Platinum Ave Deming, NY 88030 <br>
+                    <a href="info@techgadsolutions.com">info@techgadsolutions.com</a>
+                </address>
+            </div>
+            <aside>
+                <div class="sec-letterhead">
+                    <h1 id="title" class="judul-formulir">Customer Satisfaction Survey</h1>
+                    <p id="description" class="ket-formulir">
+                    Your responses will play a vital role in enhancing your experience with TechGad Solutions.</p>
+                </div>
+            </aside>
+            <form id="survey-form">
+                <div class="stuf">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required="">
+                
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required="">
+                </div>                             
+            </form>
+            <form id="survey-form">         
+            <div class="stuf">
+                <label id="number-label" for="name">Phone Number:</label>
+                <input type="number" id="number" name="number" min="0" max="9" class="form-control" placeholder="Enter a number between 1 and 9" required>
+
+                <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+                    <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+                  </div>
+            </form> 
+                                     
+
+            <form id="survey-form">
+            <div id="box" class="check-box">
+            <div class="check-box-quest">
+            <div class="question">
+                <p>What is your current occupation?</p>                
+            </div>
+                <div class="afirm">
+                <select id="dropdown" name="role" class="form-control" required="">
+                    <option disabled="" selected="" value="">Select Your current occupation</option>
+                    <option value="Employed full-time">Employed full-time</option>
+                    <option value="Employed part-time">Employed part-time</option>
+                    <option value="Student">Student</option>
+                    <option value="elf-employedy">Self-employedy</option>
+                    </select>                                   
+                </div>
+
+            <div class="question">
+                <p>On a scale of 1 to 4, how satisfied are you with the user interface of Model X1</p>                
+            </div>
+            <div class="afirm">
+                <label><input name="user-recommend" value="Very Dissatisfied" type="radio" class="input-radio" checked="">
+                Very Dissatisfied
+                </label><br>
+
+                <label><input name="user-recommend" value=" Dissatisfied" type="radio" class="input-radio" checked="">
+                Dissatisfied</label><br>
+
+                <label><input name="user-recommend" value="Neutral" type="radio" class="input-radio" checked="">
+                Neutral</label><br>
+                
+                <label><input name="user-recommend" value="Satisfied" type="radio" class="input-radio" checked="">
+                Satisfied</label><br>
+            </div>
+            
+                <p>What is your relationship status?</p>
+                <div class="afirm">
+                <select id="dropdown" name="role" class="form-control" required="">
+                    <option disabled="" selected="" value="">Select Your current relationship status</option>
+                    <option value="Married">In a Relationship</option>
+                    <option value="Engaged">Engaged</option>
+                    <option value="Divorced">Divorced</option>
+                    <option value="Widowed">Widowed</option>
+                    <option value="It's Complicated">It's Complicated</option>                    
+                    </select>                                   
+                </div>
+
+                
+            <div class="question">
+                <p>Please rate the following features of the Model X1</p>                
+                </div>
+                <div class="afirm">
+                    <label><input name="prefer" value="Battery Life" type="checkbox" class="input-checkbox">Battery Life</label>
+                    <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Front-end Projects</label>
+                    <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Front-end Projects</label>
+                    <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Front-end Projects</label>
+            </div>
+
+            <div class="afirm">
+                <label><input name="prefer" value="Camera Quality" type="checkbox" class="input-checkbox">Camera Quality</label>
+                <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Front-end Projects</label>
+                <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Front-end Projects</label>
+                <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Front-end Projects</label>
+            </div>
+
+        <div class="afirm">
+            <label><input name="prefer" value="Performance" type="checkbox" class="input-checkbox">Performance</label>
+            <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Front-end Projects</label>
+            <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Front-end Projects</label>
+            <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Front-end Projects</label>
+        </div>
+
+
+        <div class="sugest">
+            <p>Do you have any additional comments or 
+                suggestions for improving Model X1?</p>                
+            <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+            </div>
+
+        </div>
+            
+            <div class="submit">
+            <button type="submit" id="submit" class="submit-button">
+                Submit
+            </button>
+        </form>
+
+        </div>
+        </header>
+    
+</body>
+</html>

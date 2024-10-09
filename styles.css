@@ -1,0 +1,85 @@
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: red;
+    background-image: linear-gradient(145deg, rgba(150, 55, 18, 0.5), rgba(15, 7, 100, 0.8)), url(https://inmoment.com/wp-content/uploads/2016/01/CustomerSurvey-Statistics-2048x1438.png);
+    background-color: rgba(255, 255, 255, 0.5);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+body {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: white;  
+    margin: 0;    
+    justify-content: center;    
+}
+
+header {
+    display: flex;   
+    background-color: darkorchid;
+    opacity: 0.8;
+    width: 750px;
+    height: 750px;
+    margin-top: 50px; 
+    justify-content: space-around;
+    align-items: center;  
+}
+
+.container{
+    width: 700px;
+    height: fit-content;
+    align-content: center; 
+    justify-content: space-between;
+}
+
+.letterhead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0px;
+}
+
+.image-class{
+    height: 60px;
+    width: auto;    
+    align-self: center;
+}
+
+address{
+    text-align: right;
+            font-size: 10px;
+}
+        
+.judul-formulir{
+    font-size: 30px;
+    padding: 0px;
+    margin-bottom: 0px;
+    }
+
+.ket-formulir{
+    font-size: 14px;
+    margin-top: 0px;
+}
+
+#survey-form{
+    display: flex;
+}
+        
+.afirm{
+    display: flex;    
+}
+        
+.submit{
+    display : box;
+    }
+        
